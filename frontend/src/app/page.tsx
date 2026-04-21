@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Navbar from "./components/fragments/Navbar";
 import { About3 } from "./components/about3";
+import Services from "./components/Services";
 
 export default function HeroSection() {
   const dummyContent = {
@@ -33,15 +34,14 @@ export default function HeroSection() {
               <p>{dummyContent.textBlock}</p>
             </div>
 
-            <div className="bg-black text-white px-8 py-4 flex items-center justify-center font-bold tracking-[0.2em] text-xs md:text-sm whitespace-nowrap">
+            <div className= "text-white px-8 py-4 flex items-center justify-center font-bold tracking-[0.2em] text-xs md:text-sm whitespace-nowrap">
               {dummyContent.microritm}
             </div>
           </div>
         </div>
       </section>
-      <section className="w-full">
         <About3  />
-      </section>
+        <Services />
     </main>
   );
 }
